@@ -12,3 +12,6 @@ menu:
 
 footer:
   powered: false
+
+local_search:
+  enable: true
