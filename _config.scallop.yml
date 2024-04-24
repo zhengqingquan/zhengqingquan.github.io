@@ -5,3 +5,10 @@ sidebar:
 
 avatar:
   url: https://avatars.githubusercontent.com/zhengqingquan
+
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+
+footer:
+  powered: false

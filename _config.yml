@@ -3,12 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: justzqq
 subtitle: ''
-description: ''
+description: 'Not an interesting person. <br> Wants to have everything, but turns around to find nothing.'
 keywords:
-author: John Doe
-language: en
+author: zhengqq
+# Language
+## See: https://hexo.io/docs/internationalization.html
+language: zh-CN
 timezone: ''
 
 # URL
