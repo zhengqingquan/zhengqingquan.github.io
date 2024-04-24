@@ -15,3 +15,9 @@ footer:
 
 local_search:
   enable: true
+
+font:
+  enable: true
+  global:
+    # See: https://github.com/googlefonts/josefinsans
+    family: Josefin Sans
