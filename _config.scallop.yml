@@ -15,6 +15,11 @@ menu:
 footer:
   powered: false
 
+# Automatically insert whitespace between CJK and half-width characters.
+# For more information: https://github.com/vinta/pangu.js
+# Server-side plugin: https://github.com/next-theme/hexo-pangu
+pangu: true
+
 local_search:
   enable: true
 
