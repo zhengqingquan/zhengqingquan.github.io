@@ -1,3 +1,5 @@
+minify: true
+
 scheme: Mist
 
 sidebar:
