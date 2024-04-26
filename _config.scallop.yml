@@ -33,3 +33,6 @@ font:
     # Josefin Sans: https://github.com/googlefonts/josefinsans
     # Noto Serif SC: https://github.com/notofonts/noto-cjk
     family: Josefin Sans, Noto Serif SC
+
+motion:
+  enable: false
