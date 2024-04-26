@@ -2,7 +2,7 @@
 title: 给 Hexo 博客文章添加字数统计和阅读时长
 date: 2024-04-26 09:17:51
 updated: 2024-04-26 09:17:51
-description: 本文介绍如何给 Hexo 博客文章添加本文字数和阅读时长，并说明其中各个配置项的作用。基于 hexo 7.2.0 和 NexT version 8.19.2。
+description: 本文介绍如何给 Hexo 博客文章添加本文字数和阅读时长，并说明其中各个配置项的作用。基于 Hexo 7.2.0 和 NexT version 8.19.2。
 categories: Blog Summary
 tags:
  - Blog
