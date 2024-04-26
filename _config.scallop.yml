@@ -36,3 +36,11 @@ font:
 
 motion:
   enable: false
+
+# Table of Contents in the Sidebar
+# Front-matter variable (nonsupport wrap expand_all).
+toc:
+  # Automatically add list number to toc.
+  number: false
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: true
