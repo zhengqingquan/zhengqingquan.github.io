@@ -44,3 +44,8 @@ toc:
   number: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: true
+
+# # Show Views / Visitors of the website / page with busuanzi.
+# # For more information: http://ibruce.info/2015/04/04/busuanzi/
+busuanzi_count:
+  enable: true
