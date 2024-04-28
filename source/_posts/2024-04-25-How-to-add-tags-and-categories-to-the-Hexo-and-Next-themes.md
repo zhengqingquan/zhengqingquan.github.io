@@ -1,5 +1,8 @@
 ---
-title: hexo+next主题如何添加标签和分类
+title: Hexo 和 Next主题，如何添加标签和分类
+date: 2024-04-25 09:17:51
+updated: 2024-04-25 09:17:51
+description: 本文介绍如何给应用了 Next 主题的 Hexo 博客添加标签和分类。基于 Hexo 7.2.0 和 NexT version 8.19.2。
 categories: Blog Summary
 tags:
  - Blog
