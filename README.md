@@ -2,6 +2,8 @@
 
 ## 基础
 
+🌐 **Website**: [https://zhengqingquan.github.io](https://zhengqingquan.github.io)
+
 采用 `Hexo` 博客框架，搭配基于 `Next` 的 `Scallop` 主题。
 
 使用 `subtree` 的方式内嵌博客主题的 `Scallop` 代码库。
