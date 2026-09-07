@@ -15,6 +15,9 @@ sidebar:
 avatar:
   url: https://avatars.githubusercontent.com/zhengqingquan
 
+social:
+  GitHub: https://github.com/zhengqingquan || fab fa-github
+
 menu:
   home: / || fa fa-home
   categories: /categories/ || fa fa-th
