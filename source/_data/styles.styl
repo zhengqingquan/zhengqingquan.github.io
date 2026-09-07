@@ -19,6 +19,48 @@
   transform: translate(-2px, calc(-50% - 3px)) scale(1);
 }
 
+// Copyright + busuanzi at sidebar bottom
+.sidebar-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 14px 12px 18px;
+  text-align: center;
+  font-size: $font-size-smallest;
+  line-height: 1.8;
+  color: $grey-dark;
+  background: linear-gradient(to top, $black-deep 70%, transparent);
+}
+
+.sidebar-footer .copyright,
+.sidebar-footer .busuanzi-count,
+.sidebar-footer .author {
+  color: $grey-dark;
+}
+
+.sidebar-footer .with-love {
+  display: none;
+}
+
+.sidebar-footer .busuanzi-count {
+  margin-top: 2px;
+}
+
+.sidebar-footer .post-meta-item {
+  margin: 0 .35em;
+}
+
+.sidebar > .sidebar-inner {
+  padding-bottom: 72px;
+}
+
+// Page footer becomes empty after move
+.footer {
+  display: none !important;
+}
+
 // Mist: pin sidebar on desktop; animate only when user toggles
 +desktop-large() {
   .sidebar-dimmer {

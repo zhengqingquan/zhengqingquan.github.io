@@ -61,5 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }, true);
 
   DESKTOP_MQ.addEventListener('change', () => apply(false));
+
+  // Move copyright + busuanzi into sidebar bottom
+  const sidebar = document.querySelector('.sidebar');
+  const copyright = document.querySelector('.footer .copyright');
+  const busuanzi = document.querySelector('.footer .busuanzi-count');
+  if (sidebar && (copyright || busuanzi)) {
+    const box = document.createElement('div');
+    box.className = 'sidebar-footer';
+    if (copyright) box.appendChild(copyright);
+    if (busuanzi) box.appendChild(busuanzi);
+    sidebar.appendChild(box);
+  }
 });
 </script>

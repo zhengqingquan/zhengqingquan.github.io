@@ -22,6 +22,7 @@ menu:
   archives: /archives/ || fa fa-archive
 
 footer:
+  since: 2024
   powered: false
 
 # Automatically insert whitespace between CJK and half-width characters.
