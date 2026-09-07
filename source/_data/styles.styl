@@ -1,4 +1,16 @@
-// Post title: scallop on the right when hovering; underline stays on text only
+// Post title hover: blue text + scallop; no underline
+.posts-expand .post-title-link {
+  transition: color .2s ease;
+}
+
+.posts-expand .post-title-link::before {
+  display: none !important;
+}
+
+.posts-expand .post-title-link:hover {
+  color: #1aa3e0;
+}
+
 .posts-expand .post-title-link::after {
   content: '';
   position: absolute;
