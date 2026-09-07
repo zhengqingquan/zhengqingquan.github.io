@@ -1,0 +1,63 @@
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const DESKTOP_MQ = window.matchMedia('(min-width: 1200px)');
+  const STORAGE_KEY = 'next-sidebar-collapsed';
+  let userCollapsed = sessionStorage.getItem(STORAGE_KEY) === '1';
+
+  const isDesktop = () => DESKTOP_MQ.matches;
+
+  const apply = (animate) => {
+    if (!isDesktop()) {
+      document.body.classList.remove('sidebar-user-collapsed', 'sidebar-animating');
+      return;
+    }
+
+    document.body.classList.toggle('sidebar-animating', Boolean(animate));
+    document.body.classList.toggle('sidebar-user-collapsed', userCollapsed);
+
+    if (userCollapsed) {
+      document.body.classList.remove('sidebar-active');
+    } else {
+      document.body.classList.add('sidebar-active');
+    }
+
+    if (animate) {
+      window.setTimeout(() => {
+        document.body.classList.remove('sidebar-animating');
+      }, 220);
+    }
+  };
+
+  // Initial / after NexT boot: no slide animation on page enter
+  apply(false);
+  window.requestAnimationFrame(() => apply(false));
+  window.addEventListener('sidebar:show', () => {
+    if (userCollapsed && isDesktop()) {
+      window.requestAnimationFrame(() => apply(false));
+    }
+  });
+
+  // Only the toggle button may expand/collapse (with animation)
+  const toggle = document.querySelector('.sidebar-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', (event) => {
+      if (!isDesktop()) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      userCollapsed = !userCollapsed;
+      sessionStorage.setItem(STORAGE_KEY, userCollapsed ? '1' : '0');
+      apply(true);
+    }, true);
+  }
+
+  // Do not collapse when clicking main content
+  window.addEventListener('mouseup', (event) => {
+    if (!isDesktop()) return;
+    if (event.target.matches('.main')) {
+      event.stopImmediatePropagation();
+    }
+  }, true);
+
+  DESKTOP_MQ.addEventListener('change', () => apply(false));
+});
+</script>

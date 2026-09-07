@@ -1,22 +1,46 @@
-// Mist: pin sidebar on desktop (keep drawer on smaller screens)
+// Mist: pin sidebar on desktop; animate only when user toggles
 +desktop-large() {
   .sidebar-dimmer {
     display: none !important;
   }
 
   .sidebar {
-    left: 0 !important;
+    left: 0;
+    // Override theme transition — animation only with .sidebar-animating
+    transition: none;
   }
 
   body {
     padding-left: $sidebar-width-expanded;
+    transition: none;
   }
 
   .footer-fixed {
     left: $sidebar-width-expanded;
+    transition: none;
   }
 
-  .sidebar-toggle {
-    display: none;
+  body.sidebar-animating {
+    transition: padding-left 0.2s ease-out;
+
+    .sidebar {
+      transition: left 0.2s ease-out;
+    }
+
+    .footer-fixed {
+      transition: left 0.2s ease-out;
+    }
+  }
+
+  body.sidebar-user-collapsed {
+    padding-left: 0;
+
+    .sidebar {
+      left: 0 - $sidebar-width-expanded;
+    }
+
+    .footer-fixed {
+      left: 0;
+    }
   }
 }
