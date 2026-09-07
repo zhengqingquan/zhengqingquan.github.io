@@ -14,7 +14,7 @@
 
 ```
 Git
-Node.js v20.10.0
+Node.js v22.17.0
 ```
 
 ## Node 包依赖
