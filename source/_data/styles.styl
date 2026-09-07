@@ -1,20 +1,22 @@
-// Post title: scallop icon on the right when hovering (with underline)
+// Post title: scallop on the right when hovering; underline stays on text only
 .posts-expand .post-title-link::after {
   content: '';
-  display: inline-block;
-  width: 0;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 1em;
   height: 1em;
-  margin-left: 0;
-  vertical-align: -0.15em;
+  margin-left: .2em;
   background: url('/images/scallop.svg') center / contain no-repeat;
   opacity: 0;
-  transition: width .2s ease, margin-left .2s ease, opacity .2s ease;
+  transform: translate(-2px, calc(-50% - 3px)) scale(.85);
+  transition: opacity .2s ease, transform .2s ease;
+  pointer-events: none;
 }
 
 .posts-expand .post-title-link:hover::after {
-  width: 1em;
-  margin-left: .4em;
   opacity: 1;
+  transform: translate(-2px, calc(-50% - 3px)) scale(1);
 }
 
 // Mist: pin sidebar on desktop; animate only when user toggles
