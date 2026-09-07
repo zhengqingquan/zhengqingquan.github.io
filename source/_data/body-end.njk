@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const apply = (animate) => {
     if (!isDesktop()) {
+      document.documentElement.classList.remove('sidebar-user-collapsed');
       document.body.classList.remove('sidebar-user-collapsed', 'sidebar-animating');
       return;
     }
 
     document.body.classList.toggle('sidebar-animating', Boolean(animate));
+    document.documentElement.classList.toggle('sidebar-user-collapsed', userCollapsed);
     document.body.classList.toggle('sidebar-user-collapsed', userCollapsed);
 
     if (userCollapsed) {

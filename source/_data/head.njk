@@ -1,0 +1,10 @@
+{# Apply collapsed state before first paint to avoid sidebar flash #}
+<script>
+(function () {
+  try {
+    if (sessionStorage.getItem('next-sidebar-collapsed') !== '1') return;
+    if (!window.matchMedia('(min-width: 1200px)').matches) return;
+    document.documentElement.classList.add('sidebar-user-collapsed');
+  } catch (e) { /* ignore */ }
+})();
+</script>

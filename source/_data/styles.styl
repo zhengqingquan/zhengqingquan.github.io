@@ -57,6 +57,13 @@
     background: $sidebar-highlight;
   }
 
+  // Collapsed: always arrow (not hamburger); expanded keeps theme ×. No hover morph.
+  body:not(.sidebar-active) .sidebar-toggle {
+    toggle-arrow($sidebar-toggle-alignment);
+  }
+
+  // html class: set in <head> before paint; body class: toggled later by JS
+  html.sidebar-user-collapsed .sidebar-toggle,
   body.sidebar-user-collapsed .sidebar-toggle {
     left: 0;
   }
@@ -77,15 +84,18 @@
     }
   }
 
+  html.sidebar-user-collapsed body,
   body.sidebar-user-collapsed {
     padding-left: 0;
+  }
 
-    .sidebar {
-      left: 0 - $sidebar-width-expanded;
-    }
+  html.sidebar-user-collapsed .sidebar,
+  body.sidebar-user-collapsed .sidebar {
+    left: 0 - $sidebar-width-expanded;
+  }
 
-    .footer-fixed {
-      left: 0;
-    }
+  html.sidebar-user-collapsed .footer-fixed,
+  body.sidebar-user-collapsed .footer-fixed {
+    left: 0;
   }
 }
