@@ -20,6 +20,47 @@
     transition: none;
   }
 
+  // Toggle: dock to sidebar's right edge and follow it
+  .sidebar-toggle {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: $sidebar-width-expanded;
+    width: 20px;
+    height: 56px;
+    padding: 0;
+    border-radius: 0 8px 8px 0;
+    background: $black-deep;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, .18);
+    opacity: .92;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transform: translateY(-50%);
+    transition: none;
+  }
+
+  .sidebar-toggle .toggle-line {
+    width: 10px;
+    margin-top: 0 !important;
+    background: $gainsboro;
+  }
+
+  .sidebar-toggle:hover {
+    opacity: 1;
+    background: lighten($black-deep, 8%);
+  }
+
+  .sidebar-toggle:hover .toggle-line {
+    background: $sidebar-highlight;
+  }
+
+  body.sidebar-user-collapsed .sidebar-toggle {
+    left: 0;
+  }
+
   body.sidebar-animating {
     transition: padding-left 0.2s ease-out;
 
@@ -28,6 +69,10 @@
     }
 
     .footer-fixed {
+      transition: left 0.2s ease-out;
+    }
+
+    .sidebar-toggle {
       transition: left 0.2s ease-out;
     }
   }
