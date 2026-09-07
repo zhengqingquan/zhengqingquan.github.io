@@ -16,7 +16,8 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :title.html
+# :hash = SHA1(filename + date) 前 12 位十六进制；与中文 title / 中文文件名无关
+permalink: posts/:hash.html
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
