@@ -44,6 +44,8 @@ font:
 motion:
   enable: false
 
+read_more_btn: false
+
 back2top:
   enable: false
 
