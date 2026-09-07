@@ -6,7 +6,7 @@ favicon:
   small: /images/favicon-16x16-scallop.png
   medium: /images/favicon-32x32-scallop.png
   apple_touch_icon: /images/apple-touch-icon-scallop.png
-  safari_pinned_tab: /images/logo.svg
+  safari_pinned_tab: /images/scallop.svg
   #android_manifest: /manifest.json
 
 sidebar:
