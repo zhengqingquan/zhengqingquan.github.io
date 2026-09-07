@@ -44,6 +44,9 @@ font:
 motion:
   enable: false
 
+back2top:
+  enable: false
+
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
 toc:
