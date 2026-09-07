@@ -24,6 +24,23 @@
   display: none !important;
 }
 
+// Mist hides post separators by default — show a divider between posts
+.posts-expand .post-eof {
+  display: block;
+  background: $grey-light;
+  height: 1px;
+  width: 100%;
+  margin: 48px auto 48px;
+}
+
+.posts-expand .post-block:not(:first-of-type) {
+  margin-top: 0;
+}
+
+.posts-expand .post-block:last-of-type .post-eof {
+  display: none;
+}
+
 // Copyright + busuanzi at sidebar bottom
 .sidebar-footer {
   position: absolute;
