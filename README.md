@@ -4,9 +4,9 @@
 
 🌐 **Website**: [https://zhengqingquan.github.io](https://zhengqingquan.github.io)
 
-采用 `Hexo` 博客框架，搭配 `NexT` 主题（目录 `themes/next`，由原 Scallop 重命名）。
+采用 `Hexo` 博客框架，搭配官方 [NexT](https://github.com/next-theme/hexo-theme-next) 主题（`themes/next`）。
 
-使用 `subtree` 的方式内嵌博客主题代码库。
+主题以官方仓库内容嵌入本地；可用 remote `next` 拉取更新。
 
 使用 `Github actions` 部署。
 
