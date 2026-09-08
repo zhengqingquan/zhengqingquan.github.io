@@ -57,12 +57,12 @@ npm run clean
 ### 新建文章
 
 ```bash
-npx hexo new "文章标题"
-# 生成：source/_posts/<标题>.md
+npx hexo new "文章标题" --path=2026/文章标题.md
+# 生成：source/_posts/<年>/<标题>.md（按年份分子目录）
 # 模板：scaffolds/post.md（含 title / date / updated / description / categories / tags）
 ```
 
-文章写在 `source/_posts/`；Front-matter 说明可参考站内相关博文或 [Hexo Front-matter](https://hexo.io/zh-cn/docs/front-matter)。
+文章按年放在 `source/_posts/YYYY/`。永久链接已写在 Front-matter 的 `permalink`（hash 或个别英文 slug），挪目录不影响外链。Front-matter 说明可参考站内相关博文或 [Hexo Front-matter](https://hexo.io/zh-cn/docs/front-matter)。
 
 ### 部署
 
