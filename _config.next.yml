@@ -50,6 +50,13 @@ motion:
 
 read_more_btn: false
 
+# Codeblock: one-click copy (hover to show)
+# style: default | flat | mac
+codeblock:
+  copy_button:
+    enable: true
+    style: default
+
 back2top:
   enable: false
 
