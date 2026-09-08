@@ -58,11 +58,29 @@ npm run clean
 
 ```bash
 npx hexo new "文章标题" --path=2026/文章标题.md
-# 生成：source/_posts/<年>/<标题>.md（按年份分子目录）
+# 生成：source/_posts/<年>/<标题>.md
+# 同时生成同名资源目录：source/_posts/<年>/<标题>/（post_asset_folder: true）
 # 模板：scaffolds/post.md（含 title / date / updated / description / categories / tags）
 ```
 
-文章按年放在 `source/_posts/YYYY/`。永久链接已写在 Front-matter 的 `permalink`（hash 或个别英文 slug），挪目录不影响外链。Front-matter 说明可参考站内相关博文或 [Hexo Front-matter](https://hexo.io/zh-cn/docs/front-matter)。
+文章按年放在 `source/_posts/YYYY/`。有配图时推荐「文章与资源同目录」（目录名与 md 主文件名一致即可，不必叫 `index.md`）：
+
+```text
+source/_posts/2023/2023-12-21-面向对象编程基础/
+  2023-12-21-面向对象编程基础.md
+  image/
+    继承.svg
+```
+
+（依赖根目录 `scripts/index-post-assets.js`：Hexo 原生会把资源夹认成与 md 同名的子目录，该脚本改为发布与 `.md` 同级的资源。）
+
+也可继续用并列写法：`<标题>.md` + `<标题>/` 资源夹。正文可写相对路径（本地预览友好）：
+
+```html
+<img src="image/继承.svg" alt="说明">
+```
+
+生成时 `scripts/rewrite-relative-post-assets.js` 会把上述相对路径展开为 `/posts/<hash>/image/...`，因此 `permalink` 请保持与全站一致的 `posts/<hash>.html`（不要改成目录形式，否则搜索/旧链接会对不上）。也可使用 `{% asset_img image/继承.svg %}`。永久链接写在 Front-matter 的 `permalink`（hash 或个别英文 slug），挪目录不影响外链。Front-matter 说明可参考站内相关博文或 [Hexo Front-matter](https://hexo.io/zh-cn/docs/front-matter)。
 
 ### 部署
 

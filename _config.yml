@@ -43,7 +43,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -57,6 +57,11 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+
+# Markdown renderer (hexo-renderer-marked)
+marked:
+  prependRoot: true
+  postAsset: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
