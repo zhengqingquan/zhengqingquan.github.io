@@ -57,13 +57,13 @@ npm run clean
 ### 新建文章
 
 ```bash
-npx hexo new "文章标题" --path=2026/文章标题.md
-# 生成：source/_posts/<年>/<标题>.md
-# 同时生成同名资源目录：source/_posts/<年>/<标题>/（post_asset_folder: true）
+npx hexo new "文章标题" --path=2026/文章标题/文章标题.md
+# 生成：source/_posts/<年>/<标题>/<标题>.md
+# 同目录可放 image/ 等资源；post_asset_folder: true 时还可能多出一个空的同名子目录，无资源可删
 # 模板：scaffolds/post.md（含 title / date / updated / description / categories / tags）
 ```
 
-文章按年放在 `source/_posts/YYYY/`。有配图时推荐「文章与资源同目录」（目录名与 md 主文件名一致即可，不必叫 `index.md`）：
+文章按年放在 `source/_posts/YYYY/`，每篇为「同名目录 + 同名 md」：
 
 ```text
 source/_posts/2023/2023-12-21-面向对象编程基础/
@@ -74,7 +74,7 @@ source/_posts/2023/2023-12-21-面向对象编程基础/
 
 （依赖根目录 `scripts/index-post-assets.js`：Hexo 原生会把资源夹认成与 md 同名的子目录，该脚本改为发布与 `.md` 同级的资源。）
 
-也可继续用并列写法：`<标题>.md` + `<标题>/` 资源夹。正文可写相对路径（本地预览友好）：
+正文可写相对路径（本地预览友好）：
 
 ```html
 <img src="image/继承.svg" alt="说明">
