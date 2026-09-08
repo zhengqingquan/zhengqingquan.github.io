@@ -1,13 +1,12 @@
 ---
 title: PyInstaller打包不同的Python版本程序。
-date: 2022-04-07 00:00:00
-updated: 2022-04-07 00:00:00
+date: 2022-04-07 11:48:11
+updated: 2022-04-08 08:49:51
 description: PyInstaller打包不同的Python版本程序
 categories: Python Learning
 tags:
  - Python
 ---
-
 ## ##PyInstaller打包不同的Python版本程序。
 
 因为Python 3.9以后的版本不再支持Windows 7系统，当我们打包的.exe程序需要在Windows 7系统上运行时，必须使用较低版本的Python解释器，如Python 3.8。

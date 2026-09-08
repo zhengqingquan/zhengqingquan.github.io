@@ -1,13 +1,12 @@
 ---
 title: Java中注解（Annotation）的用法。
-date: 2022-08-08 00:00:00
-updated: 2022-08-08 00:00:00
+date: 2022-08-08 15:29:00
+updated: 2022-08-15 10:38:45
 description: 在Java中注释的英文为Comment
 categories: Java Learning
 tags:
  - Java
 ---
-
 在Java中注释的英文为Comment。而注解的英文是Annotation。
 
 虽然注解和注释一样，也是在源代码中添加额外的补充信息。但注解都是以@开头的。

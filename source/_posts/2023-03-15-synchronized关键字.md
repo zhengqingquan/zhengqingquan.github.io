@@ -1,13 +1,12 @@
 ---
 title: synchronized关键字。
-date: 2023-03-15 00:00:00
-updated: 2023-03-15 00:00:00
+date: 2023-03-15 14:39:20
+updated: 2023-03-15 14:39:20
 description: 为什么需要synchronized关键字
 categories: Java Learning
 tags:
  - Java
 ---
-
 ### 为什么需要synchronized关键字？
 
 在多线程环境下，如果多个线程同时访问一个共享资源，就会出现多个线程同时修改这个资源的情况，从而导致数据不一致等问题。

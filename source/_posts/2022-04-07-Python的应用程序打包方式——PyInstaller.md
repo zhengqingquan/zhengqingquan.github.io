@@ -1,13 +1,12 @@
 ---
 title: Python的应用程序打包方式——PyInstaller
-date: 2022-04-07 00:00:00
-updated: 2022-04-07 00:00:00
+date: 2022-04-07 15:06:12
+updated: 2022-04-08 08:49:39
 description: Python的应用程序打包方式——PyInstaller PyInstaller并不是一个Python的原生模块，因此需要自己下载
 categories: Python Learning
 tags:
  - Python
 ---
-
 ## ##Python的应用程序打包方式——PyInstaller
 
 PyInstaller并不是一个Python的原生模块，因此需要自己下载。可以使用pip的方式在线下载或自行下载.whl文件离线安装PyInstaller模块。

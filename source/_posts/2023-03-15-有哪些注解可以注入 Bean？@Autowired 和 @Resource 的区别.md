@@ -1,14 +1,13 @@
 ---
 title: 有哪些注解可以注入 Bean？@Autowired 和 @Resource 的区别？
-date: 2023-03-15 00:00:00
-updated: 2023-03-15 00:00:00
+date: 2023-03-15 09:40:11
+updated: 2023-03-15 10:00:42
 description: 有哪些注解可以注入 Bean
 categories: Java Learning
 tags:
  - Java
  - Spring
 ---
-
 * * *
 
 ### 有哪些注解可以注入 Bean？

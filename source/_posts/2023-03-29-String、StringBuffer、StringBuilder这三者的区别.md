@@ -1,13 +1,12 @@
 ---
 title: String、StringBuffer、StringBuilder这三者的区别。
-date: 2023-03-29 00:00:00
-updated: 2023-03-29 00:00:00
+date: 2023-03-29 13:55:42
+updated: 2023-03-29 13:55:42
 description: 在Java中有两种字符串的处理方式： - 第一种是不可变的方式：String - 第二种是可变的方式：StringBuffer、StringBuilder String对象一旦被创建，就不可修改，任何…
 categories: Java Learning
 tags:
  - Java
 ---
-
 在Java中有两种字符串的处理方式：
 
 - 第一种是不可变的方式：String

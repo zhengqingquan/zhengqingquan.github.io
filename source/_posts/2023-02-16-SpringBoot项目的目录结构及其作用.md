@@ -1,14 +1,13 @@
 ---
 title: SpringBoot项目的目录结构及其作用
-date: 2023-02-16 00:00:00
-updated: 2023-02-16 00:00:00
+date: 2023-02-16 13:57:06
+updated: 2023-02-16 13:57:06
 description: servicex // 项目主文件夹（用项目名称命名） |- admin-ui // 管理服务前端代码 一般将UI和SERVICE放到一个工程中，便于管理 |- servicex-auth // 模块…
 categories: Java Learning
 tags:
  - Java
  - Spring
 ---
-
 ```
 servicex                 // 项目主文件夹（用项目名称命名）
     |- admin-ui          // 管理服务前端代码(一般将UI和SERVICE放到一个工程中，便于管理)

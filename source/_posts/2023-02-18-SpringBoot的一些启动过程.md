@@ -1,14 +1,13 @@
 ---
 title: SpringBoot的一些启动过程
-date: 2023-02-18 00:00:00
-updated: 2023-02-18 00:00:00
+date: 2023-02-18 21:12:55
+updated: 2023-02-18 21:12:55
 description: SpringBoot的一些启动过程 在SpringBoot的启动类上有个注解叫@SpringBootApplication这个注解会让Spring去扫描被@SpringBootApplication修…
 categories: Java Learning
 tags:
  - Java
  - Spring
 ---
-
 ### SpringBoot的一些启动过程
 
 在SpringBoot的启动类上有个注解叫@SpringBootApplication这个注解会让Spring去扫描被@SpringBootApplication修饰的类的文件夹中的Bean。

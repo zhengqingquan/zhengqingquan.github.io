@@ -1,14 +1,13 @@
 ---
 title: 为什么SQL中的分组GROUP BY需要使用SUN()或MAX()等聚合函数？
-date: 2023-06-14 00:00:00
-updated: 2023-06-14 00:00:00
+date: 2023-06-14 10:54:54
+updated: 2023-06-14 11:54:07
 description: +------+---------+-------+ | id | revenue | month | +------+---------+-------+ | 1 | 8000 | Jan | |…
 categories: Database Learning
 tags:
  - MySQL
  - Database
 ---
-
 ```
 +------+---------+-------+
 | id   | revenue | month |

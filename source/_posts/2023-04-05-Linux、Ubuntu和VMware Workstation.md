@@ -1,13 +1,12 @@
 ---
 title: Linux、Ubuntu和VMware Workstation
-date: 2023-04-05 00:00:00
-updated: 2023-04-05 00:00:00
+date: 2023-04-05 10:19:21
+updated: 2023-04-05 10:19:21
 description: Linux Linux是一种开放源代码的操作系统内核，最初由芬兰程序员Linus Torvalds于1991年创建
 categories: DevOps Learning
 tags:
  - Linux
 ---
-
 ### Linux
 
 Linux是一种开放源代码的操作系统内核，最初由芬兰程序员Linus Torvalds于1991年创建。Linux内核是一个用C语言编写的系统软件，负责管理计算机的硬件资源，包括处理器、内存、文件系统、设备驱动程序等。Linux内核是一个高度可定制和可扩展的操作系统内核，它具有很强的稳定性、安全性和性能。

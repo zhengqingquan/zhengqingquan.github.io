@@ -1,14 +1,13 @@
 ---
 title: 打好基础——Servlet——Server
-date: 2023-06-21 00:00:00
-updated: 2023-06-21 00:00:00
+date: 2023-06-21 08:54:18
+updated: 2023-06-21 08:54:19
 description: 在Servlet的生命周期中，客户端的请求会被转化为一个 ServletRequest 对象和一个 ServletResponse 对象，然后这两个对象会作为参数被传入到 service 方法中
 categories: Java Learning
 tags:
  - Java
  - Servlet
 ---
-
 在Servlet的生命周期中，客户端的请求会被转化为一个`ServletRequest`对象和一个`ServletResponse`对象，然后这两个对象会作为参数被传入到`service()`方法中。
 
 `service()`方法会根据HTTP请求的类型（GET，POST，PUT，DELETE等）调用相应的方法（`doGet()`, `doPost()`, `doPut()`, `doDelete()`等）。

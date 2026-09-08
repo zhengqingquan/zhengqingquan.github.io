@@ -1,13 +1,12 @@
 ---
 title: ArrayList扩容机制
-date: 2023-03-08 00:00:00
-updated: 2023-03-08 00:00:00
+date: 2023-03-08 15:46:03
+updated: 2023-03-08 15:46:04
 description: 最开始的 ArrayList 会创建长度为0的数组
 categories: Java Learning
 tags:
  - Java
 ---
-
 最开始的`ArrayList()`会创建长度为0的数组。
 
 如果指定了长度`ArrayList(num)`会创建指定长度的数组。

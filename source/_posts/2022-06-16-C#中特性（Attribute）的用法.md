@@ -1,13 +1,12 @@
 ---
 title: "C#中特性（Attribute）的用法。"
-date: 2022-06-16 00:00:00
-updated: 2022-06-16 00:00:00
+date: 2022-06-16 08:45:14
+updated: 2022-06-16 08:45:14
 description: \ C 中特性（Attribute）的用法
 categories: C Learning
 tags:
  - C
 ---
-
 ### \### C#中特性（Attribute）的用法。
 
 特性其实类似于修饰器，在方法执行的前后可以额外执行其他的代码，而不需要主动去做额外的设计。
