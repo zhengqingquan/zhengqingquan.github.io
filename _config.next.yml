@@ -20,6 +20,7 @@ social:
 
 menu:
   home: / || fa fa-home
+  projects: /projects/ || fa fa-code
   categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
   archives: /archives/ || fa fa-archive

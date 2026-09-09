@@ -1,0 +1,94 @@
+- name: logel2txt
+  url: https://github.com/zhengqingquan/logel2txt
+  description: 将展锐 ArmLogel / Logel 的 ARM 日志（优先 *_pb/traceview）导出为与 Export Trace 对齐的文本。
+  language: Python
+  category: 工具与脚本
+  tags: [Python, 日志]
+
+- name: GateWayTool
+  url: https://github.com/zhengqingquan/GateWayTool
+  description: 汽车网关相关工具。
+  language: C
+  category: 工具与脚本
+  tags: [C, 网关]
+
+- name: ASR_generate_app
+  url: https://github.com/zhengqingquan/ASR_generate_app
+  description: 用于生成 ASR 平台 APP 的脚本。
+  language: Python
+  category: 工具与脚本
+  tags: [Python, ASR]
+
+- name: git-new-old-file
+  url: https://github.com/zhengqingquan/git-new-old-file
+  description: 根据 git 历史生成新旧文件对比的辅助脚本。
+  language: Shell
+  category: 工具与脚本
+  tags: [Shell, Git]
+
+- name: har-to-openapi
+  url: https://github.com/zhengqingquan/har-to-openapi
+  description: 从 HAR 记录整理 / 推导 OpenAPI 接口描述。
+  category: 工具与脚本
+  tags: [HAR, OpenAPI]
+
+- name: fries_tool_repository
+  url: https://github.com/zhengqingquan/fries_tool_repository
+  description: 工作中常用的一些小代码工具集合。
+  category: 工具与脚本
+  tags: [工具]
+
+- name: himawari8-observer
+  url: https://github.com/zhengqingquan/himawari8-observer
+  description: 把向日葵 8 号卫星实时图设为桌面壁纸（约 11000×11000）。
+  language: Python
+  category: 兴趣向
+  tags: [Python, 卫星]
+
+- name: RadarDome
+  url: https://github.com/zhengqingquan/RadarDome
+  description: 雷达穹顶：查看飞机是否从你头顶飞过。
+  language: TypeScript
+  category: 兴趣向
+  tags: [TypeScript]
+
+- name: danmaku-migration
+  url: https://github.com/zhengqingquan/danmaku-migration
+  description: 弹幕洄游：让消息像弹幕一样在屏幕上移动。
+  category: 兴趣向
+  tags: [弹幕]
+
+- name: free-memory
+  url: https://github.com/zhengqingquan/free-memory
+  description: C 语言下释放内存相关方法的小实验。
+  language: C
+  category: 兴趣向
+  tags: [C]
+
+- name: ExtUI-Merchant
+  url: https://github.com/zhengqingquan/ExtUI-Merchant
+  description: 扩展商人界面，方便浏览商品。
+  language: Lua
+  category: 魔兽世界插件
+  tags: [Lua, WoW]
+
+- name: ExtUI-Friends
+  url: https://github.com/zhengqingquan/ExtUI-Friends
+  description: 扩展好友框体。
+  language: Lua
+  category: 魔兽世界插件
+  tags: [Lua, WoW]
+
+- name: ExUI-ChatBubble
+  url: https://github.com/zhengqingquan/ExUI-ChatBubble
+  description: 在聊天气泡中显示单位名称。
+  language: Lua
+  category: 魔兽世界插件
+  tags: [Lua, WoW]
+
+- name: AngryKeystones
+  url: https://github.com/zhengqingquan/AngryKeystones
+  description: 自动插入大秘境密钥。
+  language: Lua
+  category: 魔兽世界插件
+  tags: [Lua, WoW]

@@ -1,0 +1,66 @@
+{% extends '_layout.njk' %}
+{% import '_macro/sidebar.njk' as sidebar_template with context %}
+
+{% block title %}{{ page.title }} | {{ title }}{% endblock %}
+
+{% block class %}index posts-expand projects-index{% endblock %}
+
+{% block content %}
+
+  {%- for project in site.data['github-projects'] %}
+    <div class="post-block">
+      <article itemscope itemtype="http://schema.org/CreativeWork" class="post-content" lang="{{ page.lang }}">
+        <link itemprop="url" href="{{ project.url }}">
+
+        <header class="post-header">
+          <h2 class="post-title" itemprop="name headline">
+            {%- set projectTitleIcon = ' <i class="fa fa-external-link-alt"></i>' %}
+            {{- next_url(project.url, project.name + projectTitleIcon, {class: 'post-title-link post-title-link-external', itemprop: 'url'}) }}
+          </h2>
+
+          <div class="post-meta-container">
+            <div class="post-meta">
+              {%- if project.language %}
+                <span class="post-meta-item">
+                  <span class="post-meta-item-icon">
+                    <i class="fas fa-code"></i>
+                  </span>
+                  <span class="post-meta-item-text">{{ project.language }}</span>
+                </span>
+              {%- endif %}
+              {%- if project.category %}
+                <span class="post-meta-item">
+                  <span class="post-meta-item-icon">
+                    <i class="far fa-folder"></i>
+                  </span>
+                  <span class="post-meta-item-text">分类于</span>
+                  <span itemprop="about">{{ project.category }}</span>
+                </span>
+              {%- endif %}
+            </div>
+          </div>
+        </header>
+
+        <div class="post-body" itemprop="description">
+          <p>{{ project.description }}</p>
+        </div>
+
+        <footer class="post-footer">
+          {%- if project.tags and project.tags.length %}
+            <div class="post-tags">
+              {%- for tag in project.tags %}
+                <span class="project-tag"># {{ tag }}</span>
+              {%- endfor %}
+            </div>
+          {%- endif %}
+          <div class="post-eof"></div>
+        </footer>
+      </article>
+    </div>
+  {%- endfor %}
+
+{% endblock %}
+
+{% block sidebar %}
+  {{ sidebar_template.render(false) }}
+{% endblock %}
